@@ -6,13 +6,17 @@ puls = int(input("Puls: "))
 
 # Berechne Normalbereich
 if alter < 1:
-    normal_min, normal_max = 100, 160
+    normal_min = 100
+    normal_max = 160
 elif alter < 10:
-    normal_min, normal_max = 70, 120
+    normal_min = 70
+    normal_max = 120
 elif alter < 60:
-    normal_min, normal_max = 60, 100
+    normal_min = 60
+    normal_max = 100
 else:
-    normal_min, normal_max = 60, 90
+    normal_min = 60
+    normal_max = 90
 
 # Diagnose
 print("\n" + "=" * 30)
